@@ -1,0 +1,150 @@
+@import "./base/settings";
+@import "./base/base";
+@import url("https://fonts.googleapis.com/css?family=Hind:400,700&display=swap");
+
+body {
+  font-family: "Hind", sans-serif;
+  margin: 0 auto;
+}
+
+#main {
+  margin: 48px 0 0 48px;
+}
+
+.buttons {
+  background-color: green;
+  box-sizing: border-box;
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  &:hover {
+    border: 2px solid rgba(206, 228, 204, 0.3);
+    cursor: pointer;
+  }
+}
+
+.add {
+  background-color: rgba(30, 30, 30, 0.2);
+  border-radius: 5% 5% 0 0;
+  top: 0;
+}
+
+.subtract {
+  background-color: rgba(30, 30, 30, 0.1);
+  border-radius: 0 0 5% 5%;
+  bottom: 0;
+}
+
+.value {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 3rem;
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+  top: 30%;
+  z-index: 1;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+}
+
+.parent-block {
+  position: relative;
+}
+
+#time-left {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-top: 48px;
+}
+
+#timer-label {
+  font-size: 3rem;
+  margin-top: -6px;
+}
+
+#progress-bar {
+  background-color: yellow;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+.label {
+  color: rgba(30, 30, 30, 0.3);
+  margin: 6px 0;
+  text-transform: uppercase;
+  width: 100px;
+  -webkit-text-stroke: 1px rgba(30, 30, 30, 0.9);
+}
+
+.active {
+  color: rgba(30, 30, 30, 0.9);
+  font-weight: bold;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#reset {
+  background-color: rgba(45, 55, 66, 0.9);
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  &:hover {
+    border: 2px solid rgba(206, 228, 204, 0.3);
+    cursor: pointer;
+  }
+}
+
+#start_stop {
+  box-sizing: border-box;
+  color: transparent;
+  font-size: 1.2rem;
+  height: 30px;
+  padding-top: 0.9rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90px;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+}
+
+.stop {
+  background: rgba(168, 0, 59, 0.9);
+  &:hover {
+    border: 2px solid rgba(206, 228, 204, 0.3);
+    cursor: pointer;
+  }
+}
+
+.start {
+  background: rgba(20, 99, 65, 0.9);
+  &:hover {
+    border: 2px solid rgba(206, 228, 204, 0.3);
+    cursor: pointer;
+  }
+}
+
+.flip-block {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  color: rgb(194, 95, 95);
+  height: 83px;
+  position: relative;
+  width: 83px;
+}
+
+#restart-svg {
+  fill: rgba(255, 255, 255, 0.3);
+  height: auto;
+  left: 25%;
+  margin-left: -2.5%;
+  margin-top: -2.5%;
+  position: relative;
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 0.5px;
+  top: 25%;
+  width: 50%;
+}
